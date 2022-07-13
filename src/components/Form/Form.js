@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 const Form = () => {
   const [companyName, setCompanyName] = useState()
   const [industry, setIndustry] = useState()
-  const [companySize, setCompanySize] = useState()
+  const [companySize, setCompanySize] = useState('51-200')
   const handleSubmit = (e) => {
     e.preventDefault()
   }
@@ -44,27 +44,42 @@ const Form = () => {
           <input
             type='button'
             value='1-20'
-            onChange={(e) => setCompanySize(e.target.value)}
+            className={`${
+              companySize === '1-20' ? 'selected' : 'not-selected'
+            }`}
+            onClick={(e) => setCompanySize(e.target.value)}
           />
           <input
             type='button'
             value='21-50'
-            onChange={(e) => setCompanySize(e.target.value)}
+            className={`${
+              companySize === '21-50' ? 'selected' : 'not-selected'
+            }`}
+            onClick={(e) => setCompanySize(e.target.value)}
           />
           <input
             type='button'
             value='51-200'
-            onChange={(e) => setCompanySize(e.target.value)}
+            className={`${
+              companySize === '51-200' ? 'selected' : 'not-selected'
+            }`}
+            onClick={(e) => setCompanySize(e.target.value)}
           />
           <input
             type='button'
             value='201-500'
-            onChange={(e) => setCompanySize(e.target.value)}
+            className={`${
+              companySize === '201-500' ? 'selected' : 'not-selected'
+            }`}
+            onClick={(e) => setCompanySize(e.target.value)}
           />
           <input
             type='button'
             value='500+'
-            onChange={(e) => setCompanySize(e.target.value)}
+            onClick={(e) => setCompanySize(e.target.value)}
+            className={`${
+              companySize === '500+' ? 'selected' : 'not-selected'
+            }`}
           />
         </div>
         <button type='submit' className='btn'>
