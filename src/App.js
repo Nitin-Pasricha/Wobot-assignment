@@ -1,6 +1,7 @@
 import './App.css'
 import Nav from './components/Navbar/Nav'
 import Form from './components/Form/Form'
+import Footer from './components/Footer/Footer'
 function App() {
   return (
     <div className='App'>
@@ -9,9 +10,7 @@ function App() {
       <div className='r1-container'>
         <div className='r1'></div>
       </div>
-      <footer>
-        <p>Terms of use | Privacy Policy</p>
-      </footer>
+      <Footer />
     </div>
   )
 }

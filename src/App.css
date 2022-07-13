@@ -123,10 +123,14 @@ input {
   background: #3f72ff;
 }
 footer {
-  text-align: right;
-  margin-top: 4rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 1rem;
 }
+
 footer p {
+  text-align: right;
   cursor: pointer;
-  padding-right: 1rem;
 }
